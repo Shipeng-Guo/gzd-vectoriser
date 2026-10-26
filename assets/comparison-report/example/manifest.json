@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "title": "Geometry Example: Layers and Local Repairs",
+  "summary": "This example demonstrates the report template; it does not indicate that a real image has passed review.",
+  "canvas": {
+    "width": 800,
+    "height": 500
+  },
+  "source": "source.png",
+  "final_svg": "final.svg",
+  "final_render": "final.png",
+  "before_render": "before.png",
+  "regions": [
+    {
+      "id": "R01",
+      "title": "Connecting curve",
+      "box_xyxy": [
+        290,
+        140,
+        580,
+        280
+      ],
+      "verdict": "uncertain",
+      "summary": "Shows the difference between a broken and a completed connection.",
+      "note": "This demonstration has no review ledger and is not marked as accepted."
+    },
+    {
+      "id": "R02",
+      "title": "Foreground occlusion",
+      "box_xyxy": [
+        455,
+        160,
+        630,
+        340
+      ],
+      "verdict": "uncertain",
+      "summary": "The complete underlay curve lies beneath a separate foreground object.",
+      "note": "Removing the foreground leaves the underlay intact; this report shows only the static composite."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Construct the complete underlay first",
+      "detail": "The rectangular underlay and curve have separate groups; the foreground circle is placed above them.",
+      "image": "before.png",
+      "caption": "Demonstration geometry before revision."
+    },
+    {
+      "title": "Compare after a local repair",
+      "detail": "Complete only the connection path, preserving the background and text groups.",
+      "image": "final.png",
+      "caption": "Final demonstration geometry."
+    }
+  ],
+  "allowed_changes": [],
+  "limitations": [
+    "No actual difference scan or visual acceptance was performed for this demonstration; it must not be treated as an accepted example."
+  ]
+}

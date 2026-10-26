@@ -1,0 +1,23 @@
+# Local runtimes and dependencies
+.venv/
+venv/
+.runtime/
+node_modules/
+
+# Generated evidence and reports
+output/
+build/
+dist/
+
+# Interpreter and editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.idea/
+.vscode/
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example

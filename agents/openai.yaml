@@ -1,0 +1,4 @@
+interface:
+  display_name: "GZD Vectoriser"
+  short_description: "Rebuild editable vectors with evidence-based acceptance"
+  default_prompt: "Use $gzd-vectoriser to reconstruct or revise this diagram with complete objects, layers, and editing groups; run difference detection and inner and outer review passes; deliver the SVG, component assets, and an aligned slider comparison report, with native editable PPTX objects from the same SVG when requested."
